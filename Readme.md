@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Евгений Семенов](https://up.htmlacademy.ru/adaptive/27/user/2196291).
-* Наставник: `Неизвестно`.
+* Наставник: `Никита Сигов`(https://htmlacademy.ru/profile/crazer). 
 
 ---
 
