@@ -24,39 +24,38 @@
   height: 1px;
   margin: -1px;
 }
-.main-nav {
+.main__nav {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
-a {
+.main__item {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
 }
-.main-nav__wrapper {
+.main__wrapper {
   text-align: center;
 }
-.main-nav__list {
+.main__list {
   list-style: none;
   color: #ffffff;
   background-color: #81b3d2;
   margin: 0;
   padding: 0;
 }
-.site-list__item,
-.user-list__item {
+.site__item,
+.user__item {
   padding: 17px 0 12px;
   filter: drop-shadow(0 1px 4px #01010133);
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
 }
-/* stylelint-disable function-url-quotes */
 .logo-form {
   display: block;
   margin: 0 auto;
   padding: 90px 0 85px;
 }
-.hero-form-wraper {
+.hero__wraper {
   background-image: url("../img/background-mobile.jpg");
   background-color: #a5d1f1;
   background-repeat: no-repeat;
@@ -68,21 +67,20 @@ a {
   margin: 0;
   padding: 0;
 }
-.advantages-title,
-.card-title {
+.advantages__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   margin: 0 auto;
   padding: 0;
 }
-.advantages-heading {
+.advantages__heading {
   text-align: center;
   width: 284px;
   margin: 0 auto;
   padding: 32px 0 16px;
 }
-.advantages-description,
+.advantages__description,
 .advantages-number {
   margin: 0;
   padding: 0;
@@ -91,32 +89,24 @@ a {
   list-style: 21px;
   margin-top: 35px;
 }
-.card-number,
-.card-description {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  font-weight: 400;
-  list-style: 21px;
-}
-.advantages-list {
+.advantages__list {
   list-style: none;
   margin: 0 auto;
   padding: 0;
 }
-.advantages-item__background1 {
+.advantages__item__background1 {
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
   padding: 40px 0;
 }
-.advantages-item__icon {
+.advantages__item__icon {
   margin: 25px 18px 25px 65px;
 }
-.advantages-item__background1:last-child {
+.advantages__item__background1:last-child {
   margin-top: 21px;
 }
-.advantages-item__background2 {
+.advantages__item__background2 {
   background-color: #eeeeee;
   text-align: center;
   margin: 24px 26px;
@@ -125,24 +115,14 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-.search-title {
+.search__title {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   margin-top: 38px;
 }
-.search-hotels {
+.search__hotels {
   margin-bottom: 32px;
-}
-.button-search {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  margin-bottom: 49px;
-  color: #ffffff;
-  padding: 16px 49px;
-  background-color: #81b3d2;
-  text-transform: uppercase;
 }
 .main-footer {
   margin-top: 100px;
@@ -155,19 +135,20 @@ a {
   margin: 0 auto;
   text-align: center;
   display: block;
-}
-ul {
-  list-style: none;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .social__link,
 .copyright__text {
   color: #000000;
+  text-decoration: none;
 }
 .social__list {
   display: flex;
   padding: 0;
   margin: 0 auto;
   margin-top: 33.5px;
+  list-style: none;
 }
 .main-footer__copyright {
   margin-top: 46.55px;
@@ -180,14 +161,16 @@ ul {
   font-weight: 400;
   line-height: 21px;
   padding-right: 12px;
+  color: #000000;
+  text-decoration: none;
 }
 .feedback {
   background-color: #ffffff;
 }
-.feedback-wraper {
+.feedback__wraper {
   padding-top: 12px;
 }
-.feedback-title {
+.feedback__title {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
@@ -195,7 +178,7 @@ ul {
   text-align: center;
   margin-top: 24px;
 }
-.feedback-deckriptor {
+.feedback__deckriptor {
   width: 306px;
   text-transform: uppercase;
   font-size: 14px;
@@ -203,22 +186,88 @@ ul {
   line-height: 21px;
   text-align: center;
 }
-.feedback-input-wraper {
+.feedback__input__wraper {
   margin: 0 auto;
   padding: 0 auto;
 }
-.group-input {
+.group__input {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
-.label-data {
+.catalog__media {
+  width: 280px;
+  margin: 0 auto;
+}
+.catalog__wraper {
+  width: 280px;
+  margin: 0 auto;
+}
+.catalog__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
+  margin-top: 37px;
+}
+.catalog__deckriptor {
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
-  color: #333333;
-  margin-left: 32px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.catalog__card {
+  width: 280px;
+  margin: 0 auto;
+}
+.catalog__list {
+  list-style: none;
+  padding: 0;
+}
+.card-title {
+  padding: 15px 0 15px;
+}
+.card-like {
+  display: flex;
+  gap: 14px;
+}
+.card-list {
+  padding: 24px 0 24px;
+}
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0 auto;
+  padding: 0;
+}
+.card__number,
+.card__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  list-style: 21px;
+}
+.card__like {
+  display: flex;
+  margin-top: 14px;
+}
+.media__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.media__descriptor {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .input-from {
   width: 280px;
@@ -240,21 +289,63 @@ ul {
   line-height: 26px;
   padding: 16px;
 }
-.radio-list,
-.attractions-list {
+.label-data {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+  margin-left: 32px;
+}
+.link__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+}
+.link__descriptor,
+.like__descriptor {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+.button--search {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 49px;
+  color: #ffffff;
+  padding: 16px 49px;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.like__descriptor {
+  padding-left: 14px;
+}
+.radio__list {
+  list-style: none;
   margin-top: 30px;
   padding: 0;
 }
-.control-label {
+.radio__item {
+  margin: 18px 0 18px 82px;
+}
+.attraction__item {
+  margin: 18px 0 18px 82px;
+}
+.attractions__list {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+}
+.control__label {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
-.radio-item,
-.attractions-item {
-  margin: 18px 0 18px 82px;
-}
-.emotion-label {
+.emotion__label {
   display: inline;
   font-size: 18px;
   margin: 20px 21px;
@@ -263,72 +354,5 @@ ul {
   background-color: #f2f2f2;
   border: 0;
   padding: 16px;
-}
-.catalog-wraper {
-  width: 280px;
-  margin: 0 auto;
-}
-.catalog-title {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 37px;
-}
-.catalog-deckriptor {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.catalog-card {
-  width: 280px;
-  margin: 0 auto;
-}
-.catalog-list {
-  padding: 0;
-}
-.link-title {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  margin: 0;
-}
-.link-descriptor,
-.like-descriptor {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  margin: 0;
-}
-.card-title {
-  padding: 15px 0 15px;
-}
-.card-like {
-  display: flex;
-  gap: 14px;
-}
-.card-list {
-  padding: 24px 0 24px;
-}
-.catalog-medi {
-  width: 280px;
-  margin: 0 auto;
-}
-.media-title {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.media-descriptor {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

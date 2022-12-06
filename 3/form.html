@@ -9,33 +9,33 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main__header">
     <a href="index.html" class="main-header__logo">
       <img src="img/logo.svg" width="226" height="30" alt="Логотип городка Седона.">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+    <nav class="main__nav">
+      <button class="main__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main__wrapper">
+        <ul class="main__list site__list">
+          <li class="site__item site__item--active">
+            <a class="main__item" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
+          <li class="site__item">
+            <a class="main__item" href="catalog.html">
               Фото и видео
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a href="#">
+        <ul class="main__list user">
+          <li class="user__item">
+            <a class="main__item" href="#">
               Форма отзыва
             </a>
           </li>
-          <li class="user-list__item">
-            <a href="#">
+          <li class="user__item">
+            <a class="main__item" href="#">
               HTML Academy
             </a>
           </li>
@@ -43,20 +43,20 @@
       </div>
     </nav>
     <section class="hero">
-      <section class="hero-form-wraper">
+      <section class="hero__wraper">
         <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
         <img class="logo-form" src="img/logo-form.svg" width="229" height="39" alt="Логотип города Седона.">
       </section>
       <section class="feedback">
-        <div class="feedback-wraper">
-          <h2 class="feedback-title">Оставьте свой отзыв</h2>
-          <p class="feedback-deckriptor">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        <div class="feedback__wraper">
+          <h2 class="feedback__title">Оставьте свой отзыв</h2>
+          <p class="feedback__deckriptor">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
             вами достопримечательностях</p>
         </div>
-        <div class="feedback-input-wraper">
-          <div class="feedback-input">
-            <h2 class="feedback-title">Представьтесь:</h2>
-            <div class="group-input">
+        <div class="feedback__input__wraper">
+          <div class="feedback__input">
+            <h2 class="feedback__title">Представьтесь:</h2>
+            <div class="group__input">
               <label class="label-data" for="check-in">Имя*:</label>
               <input class="input-from  input-from__bold" type="text" id="check-in" name="check-in" value="Пётр"
                 placeholder="Укажите имя">
@@ -68,8 +68,8 @@
                 placeholder="Укажите отчество">
             </div>
             <div class="feedback-contact">
-              <h2 class="feedback-title">Контактная информация:</h2>
-              <div class="group-input">
+              <h2 class="feedback__title">Контактная информация:</h2>
+              <div class="group__input">
                 <label class="label-data" for="check-tel">Контактный телефон*:</label>
                 <input class="input-from input-from__icon" type="tel" id="check-tel" name="check-tel"
                   value="Введите телефон" placeholder="Укажите телефон">
@@ -80,78 +80,78 @@
             </div>
           </div>
         </div>
-        <div class="feedback-radio">
-          <div class="feedback-radio-wraper">
-            <h2 class="feedback-title">Ваше общее впечатление:</h2>
-            <ul class="radio-list">
-              <li class="radio-item">
+        <div class="feedback__radio">
+          <div class="feedback__radio-wraper">
+            <h2 class="feedback__title">Ваше общее впечатление:</h2>
+            <ul class="radio__list">
+              <li class="radio__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="feedback-radio"
                     value="feedback-radio">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее положительное</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Скорее положительное</span>
                 </label>
               </li>
-              <li class="radio-item">
+              <li class="radio__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="feedback-radio" value="feedback-radio"
                     checked="">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее отрицательное</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="radio-item">
+              <li class="radio__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="feedback-radio"
                     value="feedback-radio">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Затрудняюсь ответить</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
           </div>
         </div>
-        <div class="feedback-attractions">
-          <div class="feedback-attractions-wraper">
-            <h2 class="feedback-title">Посещенные достопримечательности:</h2>
-            <ul class="attractions-list">
-              <li class="attractions-item">
+        <div class="feedback__attractions">
+          <div class="feedback__attractions-wraper">
+            <h2 class="feedback__title">Посещенные достопримечательности:</h2>
+            <ul class="attractions__list">
+              <li class="attraction__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="Devil's Bridge" checked="">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Мост Дьявола</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="attractions-item">
+              <li class="attraction__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="The Bell Mountain" checked="">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Гора-Колокол</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="attractions-item">
+              <li class="attraction__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="Slide Park" checked="">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Слайд-парк</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
-              <li class="attractions-item">
+              <li class="attraction__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="Red Rocks">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красные скалы</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Красные скалы</span>
                 </label>
               </li>
             </ul>
           </div>
-          <div class="emotion-wraper">
+          <div class="emotion__wraper">
             <form class="emotions" action="https://echo.htmlacademy.ru/" method="post">
-              <h2 class="feedback-title">Опишите свои эмоции:</h2>
+              <h2 class="feedback__title">Опишите свои эмоции:</h2>
               <label class="visually-hidden" for="emotion-text"></label>
-              <input class="emotion-label" placeholder="Опишите подробно все свои восторги" type="text"
+              <input class="emotion__label" placeholder="Опишите подробно все свои восторги" type="text"
                 name="emotion-text" id="emotion-text" required="">
-              <button class="emotion-button button" type="submit">Отправить отзыв</button>
+              <button class="emotion__button button" type="submit">Отправить отзыв</button>
               <span class="required-field">* — обязательные поля</span>
             </form>
           </div>
