@@ -17,8 +17,6 @@
 
     </section>
   </header>
-
-
   <nav class="nav">
     <div class="nav__wrapper">
       <ul class="nav__list nav__list--site">
@@ -61,34 +59,36 @@
         вами достопримечательностях</p>
     </div>
   </section>
-  <section class="input">
-    <div class="input__wraper">
-      <h2 class="input__title">Представьтесь:</h2>
-      <div class="input__group">
-        <label class="label-data" for="check-in">Имя*:</label>
-        <input class="input__from  input__from--bold" type="text" id="check-in" name="check-in" value="Пётр"
-          placeholder="Укажите имя">
-        <label class="label-data " for="check-in">Фамилия*:</label>
-        <input class="input__from input__from--bold" type="text" id="check-in" name="check-in" value="Пустота"
-          placeholder="Укажите фамилию">
-        <label class="label-data " for="check-in">Отчество*:</label>
-        <input class="input__from input__from--bold" type="text" id="check-in" name="check-in" value="Викторович"
-          placeholder="Укажите отчество">
+  <section class="input__contact">
+    <section class="input">
+      <div class="input__wraper">
+        <h2 class="input__title">Представьтесь:</h2>
+        <div class="input__group">
+          <label class="label-data" for="check-in">Имя*:</label>
+          <input class="input__from  input__from--bold" type="text" id="check-in" name="check-in" value="Пётр"
+            placeholder="Укажите имя">
+          <label class="label-data " for="check-in">Фамилия*:</label>
+          <input class="input__from input__from--bold" type="text" id="check-in" name="check-in" value="Пустота"
+            placeholder="Укажите фамилию">
+          <label class="label-data " for="check-in">Отчество*:</label>
+          <input class="input__from input__from--bold" type="text" id="check-in" name="check-in" value="Викторович"
+            placeholder="Укажите отчество">
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="contact">
-    <div class="contact__wraper">
-      <h2 class="contact__title">Контактная информация:</h2>
-      <div class="contact__group">
-        <label class="label-data" for="check-tel">Контактный телефон*:</label>
-        <input class="contact__from contact__from--icon" type="tel" id="check-tel" name="check-tel"
-          value="Введите телефон" placeholder="Укажите телефон">
-        <label class="label-data" for="check-email">Электронная почта*:</label>
-        <input class="contact__from contact__from--icon" type="email" id="check-email" name="check-email"
-          value="Введите e-mail" placeholder="Укажите электронную почту">
+    </section>
+    <section class="contact">
+      <div class="contact__wraper">
+        <h2 class="contact__title">Контактная информация:</h2>
+        <div class="contact__group">
+          <label class="label-data" for="check-tel">Контактный телефон*:</label>
+          <input class="contact__from contact__from--icon" type="tel" id="check-tel" name="check-tel"
+            value="Введите телефон" placeholder="Укажите телефон">
+          <label class="label-data" for="check-email">Электронная почта*:</label>
+          <input class="contact__from contact__from--icon" type="email" id="check-email" name="check-email"
+            value="Введите e-mail" placeholder="Укажите электронную почту">
+        </div>
       </div>
-    </div>
+    </section>
   </section>
   <section class="radio">
     <div class="radio__wraper">
@@ -121,7 +121,7 @@
   </section>
   <section class="attractions">
     <div class="attractions-wraper">
-      <h2 class="attractions__title">Посещенные достопримечательности:</h2>
+      <h2 class="attractions__title">Посещенные <br> достопримечательности:</h2>
       <ul class="attractions__list attraction">
         <li class="attraction__item">
           <label class="attraction__control control">
@@ -161,9 +161,10 @@
         <label class="visually-hidden" for="emotion-text"></label>
         <input class="emotion__label" placeholder="Опишите подробно все свои восторги" type="text" name="emotion-text"
           id="emotion-text" required="">
-        <button class="emotion__button button" type="submit">Отправить отзыв</button>
-        <span class="emotion-field">* — обязательные поля</span>
       </form>
+      <button class="emotion__button button" type="submit">Отправить отзыв</button>
+      <span class="emotion-field">* — обязательные поля</span>
+
     </div>
   </section>
   <footer class="footer">
@@ -175,14 +176,14 @@
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вк</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-              Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              Ют</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телег</a>
           </li>
         </ul>
       </div>

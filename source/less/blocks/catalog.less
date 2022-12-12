@@ -18,9 +18,9 @@
 }
 
 .catalog__deckriptor {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -35,16 +35,31 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .catalog__wraper {
+    width: 458px;
+  }
 
-.card-title {
-  padding: 15px 0 15px;
+  .catalog__title {
+    font-size: 30px;
+  }
+
+  .catalog__deckriptor {
+    font-size: 13px;
+  }
+
+  .catalog__foto {
+    width: 648px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.card-like {
-  display: flex;
-  gap: 14px;
-}
-
-.card-list {
-  padding: 24px 0 24px;
+@media (min-width: @desktop-width) {
+  .catalog__foto {
+    width: 1200px;
+  }
 }
