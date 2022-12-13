@@ -1,18 +1,18 @@
 .hero__logo {
-  display: block;
   margin: 0 auto;
-  padding: 90px 0 85px;
+  height: 389px;
 }
 
 .hero__wraper {
+  display: flex;
   width: 320px;
   background-image: url("../img/background-mobile.jpg");
   background-color: #a5d1f1;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-position: 63%;
   position: relative;
   margin: 0 auto;
-  // height: 214px;
 }
 
 // .hero-form-wraper::before {
@@ -24,4 +24,23 @@
 //   top: 332px;
 //   content: "";
 //   z-index: 1;
+// }
+
+@media (min-width: @tablet-width) {
+  .hero__wraper {
+    display: flex;
+    width: 320px;
+    background-image: url("../img/background-mobile.jpg");
+    background-color: #a5d1f1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 63%;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+
+// @media (min-width: @desktop-width) {
+
 // }

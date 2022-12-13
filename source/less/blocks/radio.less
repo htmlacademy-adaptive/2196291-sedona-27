@@ -1,7 +1,11 @@
 
 .radio__item {
-  margin: 18px 0 18px 82px;
+  // margin: 18px 0 18px 82px;
+  width: 280px;
+  height: 46;
+  text-align: end;
 }
+
 
 .radio__title {
   text-transform: uppercase;
@@ -22,4 +26,30 @@
 .radio__wraper {
   width: 320px;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .radio__wraper {
+    width: 575px;
+  }
+
+  .radio__title {
+    font-size: 21px;
+  }
+
+  .radio__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio__wraper {
+    width: 960px;
+  }
+
+  .radio__list {
+
+    gap: 28px;
+  }
 }

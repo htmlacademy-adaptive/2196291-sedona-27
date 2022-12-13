@@ -12,7 +12,11 @@
 }
 
 .input__title {
+  text-transform: uppercase;
   text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .input__from {
@@ -36,4 +40,41 @@
   font-weight: 700;
   line-height: 26px;
   padding: 16px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .input__wraper {
+    width: 280px;
+  }
+
+  .input__contact {
+    display: flex;
+    justify-content: center;
+    gap: 88px;
+  }
+
+  .input__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input__wraper {
+    width: 430px;
+  }
+
+  .input__contact {
+    gap: 128px;
+  }
+
+  .input__title {
+    font-size: 21px;
+  }
+
+  .input__from {
+    width: 430px;
+    height: 58px;
+    margin-left: 16px;
+  }
 }

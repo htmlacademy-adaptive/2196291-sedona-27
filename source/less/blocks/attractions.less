@@ -4,7 +4,7 @@
 }
 
 .attraction__item {
-  margin: 18px 0 18px 82px;
+  margin: 18px 0 18px;
 }
 
 .attractions__title {
@@ -20,4 +20,36 @@
   list-style: none;
   margin-top: 30px;
   padding: 0;
+}
+
+
+@media (min-width: @tablet-width) {
+  .attractions-wraper {
+    width: 648px;
+  }
+
+  // .attractions__title {
+  //   width: 306px;
+  // }
+
+  .attractions__list {
+    display: grid;
+    grid-template-columns: 224px 224px;
+    padding: 0 144px;
+    gap: 16px 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions-wraper {
+    width: 960px;
+  }
+
+  // .attractions__title {
+  //   width: 648px;
+  // }
+
+  .attraction__item {
+    margin: 18px 0 18px;
+  }
 }

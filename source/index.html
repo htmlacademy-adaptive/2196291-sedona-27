@@ -13,10 +13,12 @@
       <a class="header__logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
       </a>
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
     </section>
   </header>
-  <nav class="nav">
+  <nav class="nav nav--closed nav--nojs">
+    <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
     <div class="nav__wrapper">
       <ul class="nav__list nav__list--site">
         <li class="nav__list__item nav__list__item--active">
@@ -52,7 +54,7 @@
   </section>
   <section class="advantages">
     <div class="advantages__heading">
-      <h2 class="advantages__title">Седона — небольшой <br> городок в Аризоне, <br> заслуживающий большего!</h2>
+      <h2 class="advantages__title">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h2>
       <p class="advantages__description">Рассмотрим 5 причины, по которым <br> Седона круче, чем Гранд-Каньон!</p>
     </div>
     <ul class="advantages__list">
@@ -63,27 +65,27 @@
           <p class="card__description">Седона — не аттракцион для туристов, <br> там течёт своя жизнь</p>
         </div>
       </li>
-      <li class="advantages__item">
+      <li class="advantages__item advantages__item--foto">
         <div class="advantages__card card">
           <img class="card__foto" src="img/photo-city.jpg" width="320" height="260" alt="Фото улици города седона.">
         </div>
       </li>
       <li class="advantages__item">
-        <div class="advantages__card card">
+        <div class="advantages__card card card--icon">
           <p class="card__icon"></p>
           <h3 class="card__title">Жильё</h3>
           <p class="card__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </div>
       </li>
       <li class="advantages__item ">
-        <div class="advantages__card card">
+        <div class="advantages__card card card--icon">
           <p class="card__icon"></p>
           <h3 class="card__title">Еда</h3>
           <p class="card__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
       </li>
       <li class="advantages__item">
-        <div class="advantages__card card">
+        <div class="advantages__card card card--icon">
           <p class="card__icon"></p>
           <h3 class="card__title">Сувениры</h3>
           <p class="card__description">Не только китайского, но и местного производства!</p>
@@ -96,7 +98,7 @@
           <p class="card__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </div>
       </li>
-      <li class="advantages__item">
+      <li class="advantages__item advantages__item--foto">
         <div class="advantages__card card">
           <img class="card__foto" src="img/photo-bridge.jpg" width="320" height="260" alt="Фото улици города седона.">
         </div>
@@ -126,8 +128,8 @@
   </section>
   <section class="search">
     <h2 class="search__title">Заинтересовались?</h2>
-    <p class="search__hotels">Укажите предполагаемые даты <br> поездки, и мы покажем вам лучшие
-      <br> предложения гостиниц в Седоне
+    <p class="search__hotels">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие
+      предложения гостиниц в Седоне.
     </p>
     <a class="button button--search" href="catalog.html">Найти гостинницу</a>
   </section>
@@ -138,20 +140,19 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__contacts contacts">
-        <a class="contacts__phone" href="#">#visitSEDONA
-        </a>
+        <a class="contacts__phone" href="#">#visitSEDONA</a>
       </div>
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вк</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-              Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              Ют</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телег</a>
           </li>
         </ul>
       </div>
@@ -167,6 +168,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -16,7 +16,11 @@
 }
 
 .contact__title {
+  text-transform: uppercase;
   text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .contact__from {
@@ -25,4 +29,27 @@
   background-color: #f2f2f2;
   border: 0;
   margin-left: 16px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .contact__wraper {
+    width: 298px;
+    margin: 0 auto;
+  }
+
+  .contact__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact__wraper {
+    width: 402px;
+  }
+
+  .contact__from {
+    width: 402px;
+    margin-left: 16px;
+  }
 }
