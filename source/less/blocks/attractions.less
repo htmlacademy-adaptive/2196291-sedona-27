@@ -18,8 +18,69 @@
 
 .attractions__list {
   list-style: none;
-  margin-top: 30px;
+  margin: 30px 20px 34px;
   padding: 0;
+}
+
+/* для элемента input c type="checkbox" */
+.attraction__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.attraction__input + .attraction__control {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.attraction__input + .attraction__control::before {
+  content: " ";
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid rgba(242, 242, 242, 1);
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: rgb(242, 242, 242);
+}
+
+/* стили при наведении курсора на checkbox */
+.attraction__input:not(:disabled):not(:checked) + .attraction__control:hover::before {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.attraction__input:not(:disabled):active + .attraction__control::before {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.attraction__input:focus + .attraction__control::before {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+// .attraction__input:focus:not(:checked) + .attraction__control::before {
+//   border-color: #80bdff;
+// }
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.attraction__input:checked + .attraction__control::before {
+  background-image: url("/img/tick.svg");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.attraction__input:disabled + .attraction__control::before {
+  background-color: rgba(242, 242, 242, 1);
 }
 
 
@@ -27,10 +88,6 @@
   .attractions-wraper {
     width: 648px;
   }
-
-  // .attractions__title {
-  //   width: 306px;
-  // }
 
   .attractions__list {
     display: grid;
