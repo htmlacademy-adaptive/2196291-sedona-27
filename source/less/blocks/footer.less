@@ -24,10 +24,26 @@
   text-decoration: none;
 }
 
-// .footer__social {
-//   display: flex;
-// }
+.copyright__link--icon {
+  fill: #000000;
+}
 
+.copyright__link--icon:focus {
+  fill: rgba(179, 179, 179, 1);
+}
+
+.copyright__link--icon:hover {
+  fill: rgba(129, 179, 210, 1);
+}
+
+.copyright__text:focus {
+  color: rgba(179, 179, 179, 1);
+}
+
+.copyright__text:hover,
+.copyright__link--icon {
+  color: rgba(129, 179, 210, 1);
+}
 
 @media (min-width: @tablet-width) {
   .footer__wrapper {
@@ -42,7 +58,6 @@
 
   .footer__copyright {
     margin-right: 76px;
-
     margin-top: 0;
   }
 

@@ -1,4 +1,5 @@
-.card__title {
+.card__title,
+.card__title--icon {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -7,7 +8,8 @@
 }
 
 .card__number,
-.card__description {
+.card__description,
+.card__description--icon {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -41,11 +43,6 @@
   margin: 25px 18px 25px 65px;
 }
 
-
-.card-title {
-  padding: 15px 0 15px;
-}
-
 .card-like {
   display: flex;
   gap: 14px;
@@ -55,8 +52,74 @@
   padding: 24px 0 24px;
 }
 
-// @media (min-width: @tablet-width) {
-//   .card--foto {
-//     width: 512px;
-//   }
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: 60px;
+  left: 45px;
+  transform: translate(-120%, -25%);
+  width: 40px;
+  height: 40px;
+}
+
+.card--house::before {
+  background-image: url("../img/house-ico.svg");
+}
+
+.card__title--icon,
+.card__description--icon {
+  padding: 0 18px 0 65px;
+  text-align: left;
+}
+
+// .card__number,
+// .card__description {
+//   margin: 0;
+//   padding: 0;
+//   font-size: 14px;
+//   font-weight: 400;
+//   list-style: 21px;
 // }
+
+
+.card--food::before {
+  background-image: url("../img/food-ico.svg");
+}
+
+.card--gift::before {
+  background-image: url("../img/gift-ico.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .card::before {
+    top: 60px;
+    left: 175px;
+    width: 80px;
+    height: 75px;
+  }
+
+  .card__title--icon,
+  .card__description--icon {
+    padding: 0;
+    text-align: center;
+  }
+
+  .card__title--icon {
+    margin-top: 126px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card::before {
+    top: 60px;
+    left: 250px;
+  }
+}
