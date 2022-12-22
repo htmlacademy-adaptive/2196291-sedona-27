@@ -6,11 +6,20 @@
   padding: 0;
 }
 
-
 .foto__like {
   display: flex;
   margin-top: 14px;
 }
+
+.foto__item {
+  width: 280px;
+  height: 375px;
+}
+
+.foto__images {
+  height: 280px;
+}
+
 
 @media (min-width: @tablet-width) {
   .foto__item {
@@ -18,9 +27,18 @@
     height: 347px;
   }
 
+  .foto__images {
+    height: 400px;
+  }
+
   .foto__item--big {
     width: 648px;
     height: 480px;
+  }
+
+  .foto__images--big {
+    // height: 400px;
+    width: 100%;
   }
 }
 
