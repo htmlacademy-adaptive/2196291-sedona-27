@@ -1,0 +1,29 @@
+.map {
+  display: flex;
+  margin: auto;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light);
+  background-position: 0 0;
+  background-repeat: repeat;
+  justify-content: center;
+  margin-top: 49px;
+  width: 100%;
+}
+
+.map iframe {
+  border: none;
+  display: block;
+}
+
+
+@media (min-width: @tablet-width) {
+  .map iframe {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map iframe {
+    width: 1200px;
+  }
+}
