@@ -1,28 +1,17 @@
-// .hero {
-//   margin: -40px;
-// }
-
 .hero__logo {
   margin: 0 auto;
-  // width: 320px;
   vertical-align: middle;
 }
 
 .hero__wraper {
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
   width: 320px;
   height: 390px;
   align-items: center;
-  background-image: url("../img/background-mobile.jpg");
-  background-color: #a5d1f1;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: 63%;
-  position: relative;
-  margin: 0 auto;
+  background: url("/img/white-triangle.png") bottom no-repeat, url("../img/background-mobile.jpg") 100%;
+  justify-content: center;
 }
-
 
 @media (min-width: @tablet-width) {
   .hero {
@@ -31,7 +20,16 @@
 
   .hero__wraper {
     width: 768px;
-    background-image: url("../img/background-tablet.jpg");
+    background: url("/img/white-triangle-tablet.png") bottom no-repeat, url("/img/background-tablet.jpg") 100%;
+
+    // @media (min-resolution: 2dppx) {
+    //   .hero__wraper {
+    //     width: 1338px;
+    //     // background-image: url("../img/background-tablet@2x.jpg");
+    //     background: url("/img/white-triangle-tablet.png") bottom no-repeat, url("/img/background-tablet@2x.jpg") 100%;
+    //     background-size: 1338px auto;
+    //   }
+    // }
   }
 
   .hero__logo {
@@ -39,23 +37,9 @@
   }
 }
 
-@media (min-resolution: 2dppx) {
-  .hero__wraper {
-    background-image: url("../img/background-tablet@2x.jpg");
-    background-size: 1338px auto;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .hero__wraper {
     width: 1200px;
-    background-image: url("../img/background-desktop.jpg");
-  }
-}
-
-@media (min-resolution: 2dppx) {
-  .hero__wraper {
-    background-image: url("../img/background-desktop@2x.jpg");
-    background-size: 2300px auto;
+    background: url("/img/white-triangle-desktop.png") bottom no-repeat, url("/img/background-desktop.jpg") 100%;
   }
 }
