@@ -125,11 +125,28 @@
   .card__title--icon {
     margin-top: 126px;
   }
+
+  .card--icon {
+    min-height: 330px;
+  }
+
+  .card--background1,
+  .card--background2 {
+    display: flex;
+    min-height: 256px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .card::before {
     top: 60px;
     left: 250px;
+  }
+
+  .card--background1 {
+    min-height: 256px;
   }
 }
