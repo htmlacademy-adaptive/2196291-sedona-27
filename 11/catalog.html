@@ -1,0 +1,215 @@
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Седона</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/source/fonts/ptsans.woff2" as="font">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.svg">
+  <base href="https://htmlacademy-adaptive.github.io/2196291-sedona-27/11/">
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <section class="header__wrapper">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+      </a>
+    </section>
+  </header>
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item ">
+          <a class="site__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="site__link site__link--active">
+            Фото и видео
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site__link" href="https://htmlacademy.ru/">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="hero">
+    <section class="hero__wraper">
+      <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
+      <img class="hero__logo" src="img/logo-form.svg" width="229" height="39" alt="Логотип города Седона.">
+    </section>
+    <section class="catalog">
+      <div class="catalog__wraper">
+        <h2 class="catalog__title">Фото и видео</h2>
+        <p class="catalog__deckriptor">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
+      </div>
+      <div class="catalog__foto foto">
+        <ul class="foto__list ">
+          <li class="foto__item foto__item--big">
+            <a class="foto__link" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)">
+                <source type="image/webp" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x"
+                  media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+                <source srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="foto__images foto__images--big" src="img/photo-1-mobile.jpg" width="280" height="280"
+                  srcset="img/photo-1-mobile@2x.jpg 2x" alt="Дорога в закат.">
+              </picture>
+            </a>
+            <div class="foto__descriptor">
+              <div class="foto__title link">
+                <h3 class="link__title ">Неродные просторы</h3>
+                <p class="link__descriptor">Автор фото: Борис</p>
+              </div>
+              <div class="foto__like like">
+                <svg class="like__icon">
+                  <use xlink:href="./img/like-iconn.svg#like__icon"></use>
+                </svg>
+                <p class="like__descriptor">1350</p>
+              </div>
+            </div>
+          </li>
+          <li class="foto__item foto__item--normal">
+            <a class="foto__link" href="#">
+              <picture>
+                <source srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="foto__images foto__images--normal" src="img/photo-2-mobile.jpg" width="280" height="280"
+                  srcset="img/photo-2-mobile@2x.jpg 2x" alt="Цветущий кактус на фоне каньона.">
+              </picture>
+            </a>
+            <div class="foto__descriptor">
+              <div class="foto__title link">
+                <h3 class="link__title">Местная растительность</h3>
+                <p class="link__descriptor">Автор фото: Сергей</p>
+              </div>
+              <div class="foto__like like">
+                <svg class="like__icon">
+                  <use xlink:href="./img/like-iconn.svg#like__icon"></use>
+                </svg>
+                <p class="like__descriptor">143</p>
+              </div>
+            </div>
+          </li>
+          <li class="foto__item foto__item--normal">
+            <a class="foto__link" href="#">
+              <picture>
+                <source srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="foto__images foto__images--normal" src="img/photo-3-mobile.jpg" width="280" height="280"
+                  srcset="img/photo-3-mobile@2x.jpg 2x" alt="Горный серпантин.">
+              </picture>
+            </a>
+            <div class="foto__descriptor">
+              <div class="foto__title link">
+                <h3 class="link__title ">Дорога на север</h3>
+                <p class="link__descriptor">Автор фото: Пётр</p>
+              </div>
+              <div class="foto__like like ">
+                <svg class="like__icon">
+                  <use xlink:href="./img/like-iconn.svg#like__icon"></use>
+                </svg>
+                <p class="like__descriptor">96</p>
+              </div>
+            </div>
+          </li>
+          <li class="foto__item foto__item--normal">
+            <a class="foto__link" href="#">
+              <picture>
+                <source srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="foto__images foto__images--normal" src="img/photo-4-mobile.jpg" width="280" height="280"
+                  srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фотография каньона.">
+              </picture>
+            </a>
+            <div class="foto__descriptor">
+              <div class="foto__title link">
+                <h3 class="link__title">Мост дьявола</h3>
+                <p class="link__descriptor">Автор фото: Антон</p>
+              </div>
+              <div class="foto__like like">
+                <svg class="like__icon">
+                  <use xlink:href="./img/like-iconn.svg#like__icon"></use>
+                </svg>
+                <p class="like__descriptor">256</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+  <section class="media">
+    <div class="media__wrapper">
+      <h2 class="media__title">Все еще сомневаетесь?</h2>
+      <p class="media__descriptor">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+        раз!</p>
+      <div class="media__file">
+        <picture>
+          <source srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+          <source srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <img class="media__screen " src="img/video-mobile.jpg" width="280" height="177"
+            srcset="img/video-mobile@2x.jpg 2x" alt="Горная дорога в Седону">
+        </picture>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__contacts contacts">
+        <a class="contacts__phone" href="#">#visitSEDONA</a>
+      </div>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <img class="social__icon social__icon--vk" src="./img/icon-vk.svg" width="24" height="24"
+                alt="Группа в Вконтакте">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <img class="social__icon social__icon--tg" src="./img/icon-tg.svg" width="24" height="24"
+                alt="Группа в Телеграм">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="social__icon social__icon--yt" src="./img/icon-yt.svg" width="24" height="24"
+                alt="Канал на Ютуб">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Сайт htmlacademy">Разработано:
+          <svg class="footer__academy">
+            <use xlink:href="./img/htmlacademy.svg#copyright__icon"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/script.min.js"></script>
+</body>
+
+</html>
