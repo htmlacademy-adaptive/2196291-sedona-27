@@ -22,7 +22,8 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  margin-top: 24px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .emotion__label:focus,
@@ -32,6 +33,16 @@
 
 .emotion__label:active {
   background-color: rgba(255, 255, 255, 1);
+}
+
+.emotion-field {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.emotion__wraper {
+  margin-bottom: 55px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -62,6 +73,30 @@
     font-size: 21px;
     line-height: 26px;
     margin-top: 24px;
+    position: relative;
+    margin-bottom: 26px;
+  }
+
+  .emotion__title::after {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    content: " ";
+    width: 122px;
+    margin-top: 2px;
+    border: 0;
+    border-top: 1px solid #d6d6d6;
+  }
+
+  .emotion__title::before {
+    position: absolute;
+    right: 0;
+    top: 9px;
+    content: " ";
+    width: 122px;
+    margin-top: 2px;
+    border: 0;
+    border-top: 1px solid #d6d6d6;
   }
 
   .emotion__wraper {
@@ -76,14 +111,21 @@
   .emotion__label {
     width: 648px;
     height: 160px;
+    padding-bottom: 116px;
   }
 
   .emotion__button {
     width: 324px;
+    margin-top: 49px;
   }
 
   .emotion-field {
-    padding-top: 70px;
+    padding-top: 69px;
+  }
+
+  .emotion {
+    width: 100%;
+    margin: -37px auto 65px;
   }
 }
 
@@ -99,5 +141,17 @@
 
   .emotion__button {
     width: 384px;
+  }
+
+  .emotion__title::after {
+    top: 9px;
+    left: -95px;
+    width: 278px;
+  }
+
+  .emotion__title::before {
+    right: -97px;
+    top: 9px;
+    width: 278px;
   }
 }

@@ -13,6 +13,14 @@
   justify-content: center;
 }
 
+.hero__wraper--form {
+  height: 157px;
+}
+
+.hero__logo--form {
+  margin-top: -15px;
+}
+
 @media (min-width: @tablet-width) {
   .hero {
     margin: 0;
@@ -24,14 +32,30 @@
     background: url("../img/white-triangle-tablet.png") bottom no-repeat, url("../img/background-tablet.jpg") 100%;
   }
 
+  .hero__wraper--form {
+    width: 768px;
+    height: 291px;
+    background: url("../img/white-triangle-tablet.png") bottom no-repeat, url("../img/background-tablet.jpg") 100%;
+  }
+
   .hero__logo--form {
-    width: 257px;
-    height: 78px;
+    width: 460px;
+  }
+
+  .hero__logo {
+    width: 464px;
+    margin-top: -10px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .hero__wraper {
+    width: 1200px;
+    background: url("../img/white-triangle-desktop.png") bottom no-repeat, url("../img/background-desktop.jpg") 100%;
+  }
+
+  .hero__wraper--form {
+    height: 301px;
     width: 1200px;
     background: url("../img/white-triangle-desktop.png") bottom no-repeat, url("../img/background-desktop.jpg") 100%;
   }

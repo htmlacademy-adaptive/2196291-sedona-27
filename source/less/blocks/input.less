@@ -12,6 +12,7 @@
 }
 
 .input__title {
+  margin: 25px 0 20px;
   text-transform: uppercase;
   text-align: center;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -25,7 +26,8 @@
   height: 58px;
   background-color: #f2f2f2;
   border: 0;
-  margin-left: 16px;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 .input__from:focus,
@@ -64,10 +66,29 @@
     display: flex;
     justify-content: center;
     gap: 88px;
+    margin: 78px 0 55px;
+    position: relative;
+  }
+
+  .input__contact::after {
+    position: absolute;
+    top: 190px;
+    content: " ";
+    width: 340px;
+    transform: rotate(90deg);
+    margin-top: 2px;
+    border: 0;
+    border-top: 1px solid #d6d6d6;
   }
 
   .input__title {
     font-size: 21px;
+    margin-left: 57px;
+  }
+
+  .input__from {
+    margin-left: 8px;
+    margin-bottom: 8px;
   }
 }
 
@@ -77,16 +98,22 @@
   }
 
   .input__contact {
+    margin-top: 41px;
     gap: 128px;
+    margin-bottom: 63px;
   }
 
   .input__title {
-    font-size: 21px;
+    margin-left: 67px;
   }
 
   .input__from {
     width: 430px;
     height: 58px;
-    margin-left: 16px;
+    margin-left: 0;
+  }
+
+  .input__contact::after {
+    left: 445px;
   }
 }
