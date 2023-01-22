@@ -16,12 +16,27 @@
 .foto__like {
   display: flex;
   margin-top: 14px;
+  margin-bottom: -8px;
 }
 
+.foto__line {
+  width: 320px;
+  margin: 36px 0 24px;
+  left: -20px;
+  padding: 0;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+}
 
 @media (min-width: @tablet-width) {
   .foto {
     width: 648px;
+  }
+
+  .foto__line {
+    display: none;
   }
 
   .foto__list {
@@ -35,7 +50,8 @@
 
   .foto__like {
     display: flex;
-    margin: 14px;
+    margin: 6px 16px 0 0;
+    align-items: center;
   }
 
   .foto__images--normal {
@@ -49,8 +65,8 @@
   .foto__descriptor {
     display: flex;
     justify-content: space-between;
-    padding-left: 21px;
-    background-color: rgba(242, 242, 242, 1);
+    padding: 7px 0 16px 20px;
+    background-color: #f2f2f2;
   }
 }
 
@@ -72,7 +88,7 @@
     justify-content: space-between;
     padding-left: 21px;
     position: sticky;
-    margin-top: -49px;
+    margin-top: -80px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }

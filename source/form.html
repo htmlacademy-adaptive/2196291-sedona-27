@@ -47,7 +47,7 @@
     </div>
   </nav>
   <section class="hero">
-    <section class="hero__wraper">
+    <section class="hero__wraper hero__wraper--form">
       <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
       <img class="hero__logo--form" src="img/logo-form.svg" width="229" height="39" alt="Логотип города Седона.">
     </section>
@@ -58,29 +58,31 @@
       <p class="feedback__deckriptor">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
     </div>
+    <hr class="feedback__line">
   </section>
-  <section class="input__contact">
+  <section class="input__contact ">
     <section class="input">
       <div class="input__wraper">
         <h2 class="input__title">Представьтесь:</h2>
         <div class="input__group">
           <label class="label-data" for="check-name">Имя*:</label>
           <input class="input__from  input__from--bold" type="text" id="check-in" name="check-name" value=""
-            placeholder="Укажите имя">
+            placeholder="Пётр">
           <label class="label-data " for="check-family">Фамилия*:</label>
           <input class="input__from input__from--bold" type="text" id="check-in" name="check-family" value=""
-            placeholder="Укажите фамилию">
+            placeholder="Пустота">
           <label class="label-data " for="check-patronymic">Отчество*:</label>
           <input class="input__from input__from--bold" type="text" id="check-in" name="check-patronymic" value=""
-            placeholder="Укажите отчество">
+            placeholder="Викторович">
         </div>
+        <hr class="feedback__line">
       </div>
     </section>
     <section class="contact">
       <div class="contact__wraper">
         <h2 class="contact__title">Контактная информация:</h2>
         <div class="contact__group">
-          <label class="label-data" for="check-tel">Контактный телефон*:</label>
+          <label class="label-data label-data--tel" for="check-tel">Контактный телефон*:</label>
           <input class="contact__from " type="tel" id="check-tel" name="check-tel" value="Введите телефон"
             placeholder="Укажите телефон">
           <span class="contact__from--phone">
@@ -91,7 +93,7 @@
                 fill="#010101" />
             </svg>
           </span>
-          <label class="label-data" for="check-email">Электронная почта*:</label>
+          <label class="label-data label-data--email" for="check-email">Электронная почта*:</label>
           <input class="contact__from " type="email" id="check-email" name="check-email" value="Введите e-mail"
             placeholder="Укажите электронную почту">
           <span class="contact__from--email">
@@ -103,6 +105,7 @@
             </svg>
           </span>
         </div>
+        <hr class="contact__line">
       </div>
     </section>
   </section>
@@ -133,6 +136,7 @@
         </li>
       </ul>
     </div>
+    <hr class="radio__line">
   </section>
   <section class="attractions">
     <div class="attractions-wraper">
@@ -162,8 +166,8 @@
           </label>
         </li>
       </ul>
-
     </div>
+    <hr class="attraction__line">
   </section>
   <section class="emotion">
     <div class="emotion__wraper">
@@ -179,10 +183,10 @@
   </section>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="footer__contacts contacts">
+      <div class="footer__contacts contacts footer__contacts--form">
         <a class="contacts__phone" href="#">#visitSEDONA</a>
       </div>
-      <div class="footer__social social">
+      <div class="footer__social social footer__social--form">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -204,7 +208,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__copyright copyright">
+      <div class="footer__copyright copyright footer__copyright--form">
         <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Сайт htmlacademy">Разработано:
           <svg class="footer__academy">

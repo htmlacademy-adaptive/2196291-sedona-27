@@ -6,7 +6,6 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 48px;
-  // margin: 45px 42px 0;
 }
 
 .modal__description {
@@ -29,24 +28,46 @@
   height: 100%;
   z-index: 12;
   background: rgba(0, 0, 0, 0.3);
+  align-items: center;
 }
 
 .modal__wraper {
-  position: relative;
-  margin: auto;
-  // padding: 64px 70px;
   background-color: rgb(255, 255, 255);
-  // border-radius: 30px;
+  height: 280px;
   width: 320px;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
   .modal__wraper {
     width: 400px;
+    min-height: 347px;
+  }
+
+  .modal__container {
+    width: 768px;
+    justify-content: center;
   }
 
   .modal__description {
     width: 307px;
+  }
+
+  .modal__title {
+    font-size: 31px;
+    width: 237px;
+    line-height: 38px;
+    margin: 50px auto 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal__container {
+    width: 100%;
+  }
+
+  .modal__wraper {
+    margin-left: -104px;
   }
 }
 
