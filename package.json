@@ -44,6 +44,7 @@
     "node": "14.15.0"
   },
   "dependencies": {
+    "bem-validate": "^1.1.2",
     "gulp-htmlmin": "^5.0.1"
   }
 }

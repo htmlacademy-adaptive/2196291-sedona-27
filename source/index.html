@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html class="page" lang="ru">
 
 <head>
@@ -11,35 +12,35 @@
 
 <body class="page__body">
   <header class="header">
-    <section class="header__wrapper">
+    <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <img class="header__icon" src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
       </a>
-    </section>
+    </div>
   </header>
 
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item site-list__item--active site">
           <a class="site__link site__link--active">
             Главная
           </a>
         </li>
-        <li class="site-list__item ">
+        <li class="site-list__item site">
           <a class="site__link" href=" catalog.html">
             Фото и видео
           </a>
         </li>
       </ul>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+        <li class="site-list__item site">
           <a class="site__link" href="form.html">
             Форма отзыва
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site">
           <a class="site__link" href="https://htmlacademy.ru/">
             HTML Academy
           </a>
@@ -49,13 +50,13 @@
   </nav>
 
   <section class="hero">
-    <section class="hero__wraper">
+    <div class="hero__wraper">
       <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
       <picture>
-        <source media="(min-width: 768px)" srcset="img/hero-logo-desktop.svg 1x" />
+        <source media="(min-width: 768px)" srcset="img/hero-logo-desktop.svg 1x">
         <img class="hero__logo" src="img/hero-logo.svg" width="282" height="214" alt="Логотип города Седона.">
       </picture>
-    </section>
+    </div>
   </section>
   <section class="advantages">
     <div class="advantages__heading">
@@ -88,8 +89,9 @@
         <div class="advantages__card card card--house card--icon">
           <p class="card__icon">
           </p>
-          <h3 class="card__title--icon card__title--house">Жильё</h3>
-          <p class="card__description--icon card__description--house">Рекомендуем пожить в настоящем мотеле, всё как в
+          <h3 class="card__title card__title--icon card__title--house">Жильё</h3>
+          <p class="card__description card__description--icon card__description--house">Рекомендуем пожить в настоящем
+            мотеле, всё как в
             кино!</p>
         </div>
       </li>
@@ -97,8 +99,9 @@
         <div class="advantages__card card card--food card--icon">
           <p class="card__icon">
           </p>
-          <h3 class="card__title--icon card__title--food">Еда</h3>
-          <p class="card__description--icon card__description--food">Всегда заказывайте фирменный бургер, вы не
+          <h3 class="card__title card__title--icon card__title--food">Еда</h3>
+          <p class="card__description card__description--icon card__description--food">Всегда заказывайте фирменный
+            бургер, вы не
             разочаруетесь!</p>
         </div>
       </li>
@@ -106,8 +109,9 @@
         <div class="advantages__card card card--gift card--icon">
           <p class="card__icon">
           </p>
-          <h3 class="card__title--icon card__title--gift">Сувениры</h3>
-          <p class="card__description--icon card__description--gift">Не только китайского, но и местного производства!
+          <h3 class="card__title card__title--icon card__title--gift">Сувениры</h3>
+          <p class="card__description card__description--icon card__description--gift">Не только китайского, но и
+            местного производства!
           </p>
         </div>
       </li>
