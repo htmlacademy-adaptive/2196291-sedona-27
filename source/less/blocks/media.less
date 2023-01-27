@@ -1,6 +1,6 @@
 .media {
   width: 280px;
-  margin: 54px auto 0;
+  margin: 54px auto 47px;
 }
 
 .media__title {
@@ -27,24 +27,32 @@
 
 .media__wrapper {
   width: 280px;
-  margin: 0 auto -9px;
+  margin: 0 auto -17px;
 }
 
+.media__file {
+  background-color: rgb(206, 178, 145);
+  height: 177px;
+}
 
 @media (min-width: @tablet-width) {
+<<<<<<< HEAD
+  .madia__wrapper {
+=======
   .media {
     width: 648px;
-    margin: 0 auto;
+    margin: 0 auto 41px;
   }
 
   .media__file {
     width: 648px;
-    height: auto;
+    height: 500px;
   }
 
   .media__wrapper {
+>>>>>>> f9484f2e6b0e7143f22a5582b4da19abc0961844
     width: 648px;
-    margin: 56px auto 40px;
+    margin: 55px auto 35px;
   }
 
   .media__title {
@@ -56,10 +64,10 @@
     width: 445px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 23px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 84px;
+    margin-bottom: 88px;
   }
 
   .media__screen {
@@ -71,12 +79,12 @@
 @media (min-width: @desktop-width) {
   .media {
     width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 85px;
   }
 
   .media__wrapper {
     width: 800px;
-    margin-bottom: 83px;
+    margin-bottom: 79px;
   }
 
   .media__file {
@@ -86,5 +94,10 @@
 
   .media__title {
     margin-top: 60px;
+  }
+
+  .media__descriptor {
+    margin-bottom: 85px;
+    margin-top: 30px;
   }
 }
