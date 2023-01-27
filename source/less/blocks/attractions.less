@@ -4,7 +4,8 @@
 }
 
 .attraction__item {
-  margin: 18px 0 18px;
+  // margin: 7px 0;
+  margin: 6px 0;
 }
 
 .attractions__title {
@@ -19,7 +20,7 @@
 
 .attractions__list {
   list-style: none;
-  margin: 30px 20px 34px;
+  margin: 20px 20px 34px 18px;
   padding: 0;
 }
 
@@ -33,6 +34,7 @@
 /* для элемента label, связанного с .custom-checkbox */
 .attraction__input + .attraction__control {
   display: inline-flex;
+  gap: 8px;
   align-items: center;
   user-select: none;
 }
@@ -84,17 +86,99 @@
   background-color: rgba(242, 242, 242, 1);
 }
 
+.attractions__line {
+  width: 320px;
+  margin-top: -19px;
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 1px solid rgba(214, 214, 214, 1);
+}
+
+.attraction__deskriptor {
+  position: relative;
+  top: -44px;
+  left: 64px;
+  right: 0;
+  display: flex;
+  width: 129px;
+  height: 46px;
+  font-weight: 700;
+}
+
+.attraction__bridge {
+  height: 56px;
+}
+
+.attraction__bell {
+  height: 56px;
+}
+
+.attraction__park {
+  height: 56px;
+}
+
+.attraction__rock {
+  height: 56px;
+}
 
 @media (min-width: @tablet-width) {
   .attractions-wraper {
     width: 648px;
   }
 
+  .attraction__item {
+    margin: 0 0;
+  }
+
   .attractions__list {
     display: grid;
     grid-template-columns: 224px 224px;
-    padding: 0 144px;
-    gap: 16px 32px;
+    // grid-template-rows: 57px;
+    padding: 8px 64px 2px;
+    gap: 5px 34px;
+    margin-bottom: 44px;
+  }
+
+  .attractions__title {
+    font-size: 21px;
+    position: relative;
+  }
+
+  .attractions__title::after {
+    position: absolute;
+    top: 23px;
+    left: 0;
+    content: " ";
+    width: 122px;
+    margin-top: 2px;
+    border: 0;
+    border-top: 1px solid #d6d6d6;
+  }
+
+  .attractions__title::before {
+    position: absolute;
+    right: 0;
+    top: 23px;
+    content: " ";
+    width: 122px;
+    margin-top: 2px;
+    border: 0;
+    border-top: 1px solid #d6d6d6;
+  }
+
+  .attractions__line {
+    display: none;
+  }
+
+  .attraction__deskriptor {
+    position: relative;
+    top: -44px;
+    left: 64px;
+    right: 0;
+    display: flex;
+    width: 129px;
+    height: 46px;
   }
 }
 
@@ -103,7 +187,62 @@
     width: 960px;
   }
 
+  .attraction__input + .attraction__control {
+    display: inline-flex;
+    gap: 8px;
+    // align-items: center;
+    user-select: none;
+    // align-items: flex-start;
+  }
+
   .attraction__item {
     margin: 18px 0 18px;
+  }
+
+  .attractions__title::after {
+    top: 23px;
+    left: 0;
+    width: 278px;
+  }
+
+  .attractions__title::before {
+    right: 0;
+    top: 23px;
+    width: 278px;
+  }
+
+  .attractions__list {
+    display: flex;
+    padding: 0 44px;
+    // justify-content: space-between;
+    margin: 39px 0 73px;
+    font-weight: 700;
+    gap: 0;
+  }
+
+  .attraction__deskriptor {
+    position: relative;
+    top: -44px;
+    left: 64px;
+    right: 0;
+    display: flex;
+    width: 129px;
+    height: 46px;
+  }
+
+  .attraction__bridge {
+    margin-right: 107px;
+  }
+
+  .attraction__bell {
+    margin-right: 105px;
+  }
+
+  .attraction__park {
+    margin-right: 88px;
+  }
+
+  .attraction__rock {
+    margin-right: 23px;
   }
 }

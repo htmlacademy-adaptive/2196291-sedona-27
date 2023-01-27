@@ -6,21 +6,21 @@
 }
 
 .search__title {
-  margin: 0 auto;
+  margin: 40px auto 0;
   width: 262px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  margin-top: 38px;
 }
 
 .search__hotels {
-  margin-bottom: 32px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 12px;
+  width: 262px;
+  padding: 20px 0 47px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 21px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -31,11 +31,20 @@
   .search__title {
     width: 435px;
     font-size: 30px;
+    margin-top: 61px;
   }
 
   .search__hotels {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
+    width: 454px;
+    padding: 33px 0 56px 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .search__hotels {
+    width: 454px;
+    padding: 33px 0 60px 0;
+    margin: 0 auto;
   }
 }
