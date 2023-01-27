@@ -1,46 +1,38 @@
 .hero__logo {
   margin: 0 auto;
-  height: 389px;
+  vertical-align: middle;
 }
 
 .hero__wraper {
+  margin: 0 auto;
   display: flex;
   width: 320px;
-  background-image: url("../img/background-mobile.jpg");
-  background-color: #a5d1f1;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: 63%;
-  position: relative;
-  margin: 0 auto;
+  height: 390px;
+  align-items: center;
+  background: url("../img/white-triangle.png") bottom no-repeat, url("../img/background-mobile.jpg") 100%;
+  justify-content: center;
 }
 
-// .hero-form-wraper::before {
-//   position: absolute;
-//   // background-image: url(/img/logo-triangle.svg);
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   height: 100%;
-//   top: 332px;
-//   content: "";
-//   z-index: 1;
-// }
-
 @media (min-width: @tablet-width) {
+  .hero {
+    margin: 0;
+  }
+
   .hero__wraper {
-    display: flex;
-    width: 320px;
-    background-image: url("../img/background-mobile.jpg");
-    background-color: #a5d1f1;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 63%;
-    position: relative;
-    margin: 0 auto;
+    width: 768px;
+    height: 518px;
+    background: url("../img/white-triangle-tablet.png") bottom no-repeat, url("../img/background-tablet.jpg") 100%;
+  }
+
+  .hero__logo--form {
+    width: 257px;
+    height: 78px;
   }
 }
 
-
-// @media (min-width: @desktop-width) {
-
-// }
+@media (min-width: @desktop-width) {
+  .hero__wraper {
+    width: 1200px;
+    background: url("../img/white-triangle-desktop.png") bottom no-repeat, url("../img/background-desktop.jpg") 100%;
+  }
+}
