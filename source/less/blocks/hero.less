@@ -1,6 +1,8 @@
 .hero__logo {
   margin: 0 auto;
-  vertical-align: middle;
+  display: block;
+  width: 282px;
+  height: 214px;
 }
 
 .hero__wraper {
@@ -10,7 +12,36 @@
   height: 390px;
   align-items: center;
   background: url("../img/white-triangle.png") bottom no-repeat, url("../img/background-mobile.jpg") 100%;
+
+  background-color: rgb(209, 235, 251);
   justify-content: center;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero__wraper {
+    background: url("../img/white-triangle@2x.png") bottom no-repeat, url("../img/background-mobile@2x.jpg") center/320px 389px no-repeat;
+    background-color: rgb(209, 235, 251);
+  }
+}
+
+
+.hero__wraper--form {
+  height: 157px;
+  background: url("../img/white-triangle.png") left bottom/ 320px 59px no-repeat, url("../img/background-mobile.jpg") center/320px 518px no-repeat;
+  background-color: rgb(209, 235, 251);
+}
+
+@media (min-resolution: 2dppx) {
+  .hero__wraper--form {
+    background: url("../img/white-triangle@2x.png") left bottom/ 320px 59px no-repeat, url("../img/background-mobile@2x.jpg") center/320px 518px no-repeat;
+    background-color: rgb(209, 235, 251);
+  }
+}
+
+
+.hero__logo--form {
+  margin-top: -15px;
+  width: 229px;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,9 +55,31 @@
     background: url("../img/white-triangle-tablet.png") bottom no-repeat, url("../img/background-tablet.jpg") 100%;
   }
 
+  @media (min-resolution: 2dppx) {
+    .hero__wraper {
+      background: url("../img/white-triangle-tablet@2x.png") bottom/ 768px no-repeat, url("../img/background-tablet@2x.jpg") center/1200px 518px no-repeat;
+    }
+  }
+
+  .hero__wraper--form {
+    height: 291px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero__wraper--form {
+      background: url("../img/white-triangle-tablet@2x.png") left bottom/ 768px  no-repeat, url("../img/background-tablet@2x.jpg") center/768px 518px no-repeat;
+      background-color: rgb(209, 235, 251);
+    }
+  }
+
   .hero__logo--form {
-    width: 257px;
-    height: 78px;
+    width: 460px;
+  }
+
+  .hero__logo {
+    width: 464px;
+    height: 350px;
+    margin-top: -10px;
   }
 }
 
@@ -34,5 +87,22 @@
   .hero__wraper {
     width: 1200px;
     background: url("../img/white-triangle-desktop.png") bottom no-repeat, url("../img/background-desktop.jpg") 100%;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero__wraper {
+      background: url("../img/white-triangle-desktop@2x.png") bottom/ 1200px no-repeat, url("../img/background-desktop@2x.jpg") center/1200px 518px no-repeat;
+    }
+  }
+
+  .hero__wraper--form {
+    height: 301px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero__wraper--form {
+      background: url("../img/white-triangle-desktop@2x.png") left bottom/ 1200px  no-repeat, url("../img/background-desktop@2x.jpg") center/1200px 518px no-repeat;
+      background-color: rgb(209, 235, 251);
+    }
   }
 }

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html class="page" lang="ru">
 
 <head>
@@ -11,34 +12,36 @@
 
 <body class="page__body">
   <header class="header">
-    <section class="header__wrapper">
+    <div class="header__wrapper">
       <a class="header__logo" href="index.html">
-        <img src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+        <svg class="header__icon">
+          <use xlink:href="./img/sedona-icon.svg#header__icon--logo"></use>
+        </svg>
       </a>
-    </section>
+    </div>
   </header>
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item ">
+        <li class="site-list__item site">
           <a class="site__link" href="index.html">
             Главная
           </a>
         </li>
-        <li class="site-list__item ">
+        <li class="site-list__item site">
           <a class="site__link" href="catalog.html">
             Фото и видео
           </a>
         </li>
       </ul>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item site-list__item--active site">
           <a class="site__link site__link--active">
             Форма отзыва
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site">
           <a class="site__link" href="https://htmlacademy.ru/">
             HTML Academy
           </a>
@@ -47,10 +50,12 @@
     </div>
   </nav>
   <section class="hero">
-    <section class="hero__wraper">
+    <div class="hero__wraper hero__wraper--form">
       <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
-      <img class="hero__logo--form" src="img/logo-form.svg" width="229" height="39" alt="Логотип города Седона.">
-    </section>
+      <svg class="hero__logo--form">
+        <use xlink:href="./img/sedona-icon.svg#hero__icon--form"></use>
+      </svg>
+    </div>
   </section>
   <section class="feedback">
     <div class="feedback__wraper">
@@ -58,32 +63,34 @@
       <p class="feedback__deckriptor">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
     </div>
+    <hr class="feedback__line">
   </section>
-  <section class="input__contact">
-    <section class="input">
+  <section class="input-form ">
+    <div class="input">
       <div class="input__wraper">
         <h2 class="input__title">Представьтесь:</h2>
         <div class="input__group">
           <label class="label-data" for="check-name">Имя*:</label>
-          <input class="input__from  input__from--bold" type="text" id="check-in" name="check-name" value=""
-            placeholder="Укажите имя">
+          <input class="input__from  input__from--bold" type="text" id="check-name" name="check-name" value=""
+            placeholder="Пётр">
           <label class="label-data " for="check-family">Фамилия*:</label>
-          <input class="input__from input__from--bold" type="text" id="check-in" name="check-family" value=""
-            placeholder="Укажите фамилию">
+          <input class="input__from input__from--bold" type="text" id="check-family" name="check-family" value=""
+            placeholder="Пустота">
           <label class="label-data " for="check-patronymic">Отчество*:</label>
-          <input class="input__from input__from--bold" type="text" id="check-in" name="check-patronymic" value=""
-            placeholder="Укажите отчество">
+          <input class="input__from input__from--bold" type="text" id="check-patronymic" name="check-patronymic"
+            value="" placeholder="Викторович">
         </div>
+        <hr class="input__line ">
       </div>
-    </section>
+    </div>
     <section class="contact">
       <div class="contact__wraper">
         <h2 class="contact__title">Контактная информация:</h2>
         <div class="contact__group">
-          <label class="label-data" for="check-tel">Контактный телефон*:</label>
+          <label class="label-data label-data--tel" for="check-tel">Контактный телефон*:</label>
           <input class="contact__from " type="tel" id="check-tel" name="check-tel" value="Введите телефон"
             placeholder="Укажите телефон">
-          <span class="contact__from--phone">
+          <span class="contact__phone">
             <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="58" height="58" fill="#E6E6E6" />
               <path
@@ -91,10 +98,10 @@
                 fill="#010101" />
             </svg>
           </span>
-          <label class="label-data" for="check-email">Электронная почта*:</label>
+          <label class="label-data label-data--email" for="check-email">Электронная почта*:</label>
           <input class="contact__from " type="email" id="check-email" name="check-email" value="Введите e-mail"
             placeholder="Укажите электронную почту">
-          <span class="contact__from--email">
+          <span class="contact__email">
             <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="58" height="58" fill="#E6E6E6" />
               <path
@@ -103,13 +110,14 @@
             </svg>
           </span>
         </div>
+        <hr class="contact__line">
       </div>
     </section>
   </section>
   <section class="radio">
     <div class="radio__wraper">
       <h2 class="radio__title">Ваше общее впечатление:</h2>
-      <ul class="radio__list radio">
+      <ul class="radio__list ">
         <li class="radio__item">
           <label class="control">
             <input class="control-input" type="radio" name="impression" value="paypal" checked="">
@@ -133,106 +141,118 @@
         </li>
       </ul>
     </div>
+    <hr class="radio__line">
   </section>
   <section class="attractions">
     <div class="attractions-wraper">
       <h2 class="attractions__title">Посещенные <br> достопримечательности:</h2>
       <ul class="attractions__list attraction">
-        <li class="attraction__item checkbox">
+        <li class="attraction__item attraction__bridge checkbox">
           <input class="attraction__input" type="checkbox" id="attraction-1" name="Devil's Bridge" checked="">
-          <label class="attraction__control" for="attraction-1">Мост Дьявола</label>
-          </label>
+          <label class="attraction__control" for="attraction-1"></label>
+          <span class="attraction__deskriptor">Мост Дьявола</span>
         </li>
 
-        <li class="attraction__item checkbox">
+        <li class="attraction__item attraction__bell checkbox">
           <input class="attraction__input" type="checkbox" id="attraction-2" name="Devil's Bridge" checked="">
-          <label class="attraction__control" for="attraction-2">Гора-Колокол</label>
-          </label>
+          <label class="attraction__control" for="attraction-2"></label>
+          <span class="attraction__deskriptor">Гора-Колокол</span>
+
         </li>
 
-        <li class="attraction__item checkbox">
+        <li class="attraction__item attraction__park checkbox">
           <input class="attraction__input" type="checkbox" id="attraction-3" name="Devil's Bridge" checked="">
-          <label class="attraction__control" for="attraction-3">Слайд-парк</label>
-          </label>
+          <label class="attraction__control" for="attraction-3"></label>
+          <span class="attraction__deskriptor">Слайд-парк</span>
+
         </li>
 
-        <li class="attraction__item checkbox">
+        <li class="attraction__item attraction__rock checkbox">
           <input class="attraction__input" type="checkbox" id="attraction-4" name="Devil's Bridge">
-          <label class="attraction__control" for="attraction-4">Красные скалы</label>
-          </label>
+          <label class="attraction__control" for="attraction-4"></label>
+          <span class="attraction__deskriptor">Красные скалы</span>
+
         </li>
       </ul>
-
     </div>
+    <hr class="attractions__line">
   </section>
   <section class="emotion">
     <div class="emotion__wraper">
       <form class="emotion__form" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="emotion__title">Опишите свои эмоции:</h2>
-        <label class="visually-hidden" for="emotion-text" id="emotion-text"></label>
+        <label class="visually-hidden" for="emotion-text"></label>
         <input class="emotion__label" placeholder="Опишите подробно все свои восторги" type="text" name="emotion-text"
           id="emotion-text" required="">
       </form>
-      <a class="emotion__button button" type="submit">Отправить отзыв</a>
+      <a class="emotion__button button" href="#">Отправить отзыв</a>
       <span class="emotion-field">* — обязательные поля</span>
     </div>
   </section>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="footer__contacts contacts">
+      <div class="footer__contacts contacts footer__contacts--form">
         <a class="contacts__phone" href="#">#visitSEDONA</a>
       </div>
-      <div class="footer__social social">
+      <div class="footer__social social footer__social--form">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img class="social__icon social__icon--vk" src="./img/icon-vk.svg" width="24" height="24"
-                alt="Группа в Вконтакте">
+              <svg class="footer__vk">
+                <use xlink:href="./img/sedona-icon.svg#social__icon--vk"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <img class="social__icon social__icon--tg" src="./img/icon-tg.svg" width="24" height="24"
-                alt="Группа в Телеграм">
+              <svg class="footer__tg">
+                <use xlink:href="./img/sedona-icon.svg#social__icon--tg"></use>
+              </svg>
+
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="social__icon social__icon--yt" src="./img/icon-yt.svg" width="24" height="24"
-                alt="Канал на Ютуб">
+              <svg class="footer__yt">
+                <use xlink:href="./img/sedona-icon.svg#social__icon--yt"></use>
+              </svg>
+
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright copyright">
+      <div class="footer__copyright copyright footer__copyright--form">
         <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Сайт htmlacademy">Разработано:
           <svg class="footer__academy">
-            <use xlink:href="./img/htmlacademy.svg#copyright__icon"></use>
+            <use xlink:href="./img/sedona-icon.svg#copyright__icon"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <div class="modal__container modal__close">
-    <div class="modal__wraper">
-      <h2 class="modal__title">Что-то пошло не так!</h2>
-      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="button button__modal--error" type="button"><span class="visually-hidden">Закрыть
-          окно</span>ok</button>
-    </div>
-  </div>
-  <div class="modal__success modal__success--close">
-    <div class="modal__success--wraper">
-      <h2 class="modal__success--title">Ваш отзыв отправлен!</h2>
-      <p class="modal__success--description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
-        опубликуем его на сайте.</p>
-      <div class="modal__button">
-        <button class="button button__modal--success" type="button"><span class="visually-hidden">Закрыть
-            окно</span>Закрыть окно</button>
+  <section class="modal">
+    <div class="modal__container modal__close">
+      <div class="modal__wraper">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button  button--error" type="button"><span class="visually-hidden">Закрыть
+            окно</span>ok</button>
       </div>
     </div>
-  </div>
+
+    <div class="success success--close">
+      <div class="success__wraper">
+        <h2 class="success__title">Ваш отзыв отправлен!</h2>
+        <p class="success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="success__button button">
+          <button class="button button--success" type="button"><span class="visually-hidden">Закрыть
+              окно</span>Закрыть окно</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="./js/script.min.js"></script>
 </body>

@@ -10,7 +10,7 @@
 
 .catalog__title {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
@@ -20,17 +20,20 @@
 
 .catalog__deckriptor {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 26px;
 }
 
 
 @media (min-width: @tablet-width) {
   .catalog__wraper {
-    width: 458px;
+    width: 445px;
+    padding-top: 27px;
+    margin-bottom: 82px;
   }
 
   .catalog__title {
@@ -38,12 +41,14 @@
   }
 
   .catalog__deckriptor {
-    font-size: 13px;
+    font-size: 14px;
+    margin-top: 33px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  // .catalog__foto {
-  //   width: 1200px;
-  // }
+  .catalog__wraper {
+    padding-top: 62px;
+    margin-bottom: 88px;
+  }
 }

@@ -2,12 +2,20 @@
   display: flex;
   margin: auto;
   color: var(--basic-black);
-  background-color: var(--basic-extra-light);
+  background-color: rgb(244, 242, 234);
+  background-image: url("../img/map-mobile.jpg");
   background-position: 0 0;
   background-repeat: repeat;
   justify-content: center;
-  margin-top: 49px;
+  margin-top: 64px;
   width: 100%;
+  min-height: 350px;
+}
+
+@media (min-resolution: 2dppx) {
+  .map {
+    background: url("../img/map-mobile@2x.jpg") center/ 320px 350px;
+  }
 }
 
 .map iframe {
@@ -20,10 +28,32 @@
   .map iframe {
     width: 768px;
   }
+
+  .map {
+    margin-top: 75px;
+    background-image: url("../img/map-tablet.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map {
+      background: url("../img/map-tablet@2x.jpg") center/ 768px 350px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .map iframe {
     width: 1200px;
+  }
+
+  .map {
+    margin-top: 83px;
+    background-image: url("../img/map-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map {
+      background: url("../img/map-desktop@2x.jpg") center/ 1200px 350px;
+    }
   }
 }
