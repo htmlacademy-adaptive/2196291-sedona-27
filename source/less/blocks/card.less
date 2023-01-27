@@ -27,23 +27,32 @@
 }
 
 .card__description {
-  margin-top: 17px;
+  margin-top: 15px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin-bottom: 6px;
+  margin-bottom: 1px;
+}
+
+.card__description--sity {
+  width: 268px;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
 
 .card__description--road {
   width: 237px;
   margin-left: 14px;
+  margin-bottom: 5px;
 }
 
 .card__description--tourist {
   width: 255px;
   margin-left: 7px;
-  margin-top: 24px;
+  margin-top: 14px;
+  margin-bottom: 10px;
 }
 
 .card__description--icon {
@@ -54,6 +63,7 @@
   line-height: 21px;
   padding: 0 18px 0 65px;
   text-align: left;
+  // background-color: rgb(224, 213, 213);
 }
 
 .card--food {
@@ -71,7 +81,7 @@
 
 .card__description--gift {
   margin-top: 16px;
-  margin-bottom: 31px;
+  margin-bottom: 39px;
 }
 
 
@@ -86,7 +96,8 @@
 .card--icon {
   color: #000000;
   text-align: center;
-  padding: 15px 0;
+  padding: 8px 0;
+  margin: 0;
 }
 
 .card--background2 {
@@ -112,6 +123,7 @@
   padding: 24px 0 24px;
 }
 
+
 .card {
   position: relative;
 }
@@ -123,7 +135,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  top: 33px;
+  top: 27px;
   left: 66px;
   transform: translate(-120%, -25%);
   width: 40px;
@@ -148,7 +160,7 @@
 
 @media (min-width: @tablet-width) {
   .card::before {
-    top: 75px;
+    top: 50px;
     left: 184px;
     width: 80px;
     height: 74px;
@@ -157,13 +169,13 @@
   .card--gift::before {
     width: 66px;
     height: 81px;
-    margin: 19px 0 19px -4px;
+    margin: 5px 0 19px -4px;
   }
 
   .card--food::before {
     width: 78px;
     height: 81px;
-    margin: 13px 0 19px;
+    margin: 0 0 19px;
   }
 
   .card__title--icon,
@@ -173,12 +185,14 @@
   }
 
   .card__title--icon {
-    margin-top: 142px;
+    padding-top: 132px;
     font-size: 21px;
   }
 
   .card--icon {
     min-height: 298px;
+    padding: 0;
+    margin: 25px 0 5px;
   }
 
   .card--background1,
@@ -197,7 +211,7 @@
     line-height: 26px;
     padding: 0;
     width: 190px;
-    margin: 38px auto 0;
+    margin: 33px auto 0;
   }
 
   .card__description--sity {
@@ -211,7 +225,7 @@
   }
 
   .card__title--food {
-    margin-top: 154px;
+    padding-top: 129px;
   }
 
   .card__description--food {
@@ -220,7 +234,7 @@
   }
 
   .card__title--gift {
-    margin-top: 152px;
+    padding-top: 127px;
   }
 
   .card__description--gift {
@@ -230,56 +244,73 @@
 
   .card__title--bridge {
     font-size: 21px;
-    margin-top: 37px;
+    margin-top: 32px;
     padding: 0;
     width: 150px;
   }
 
   .card__description--bridge {
     width: 155px;
-    margin: 15px auto;
+    margin: 8px auto;
   }
 
   .card__title--small {
     width: 150px;
     font-size: 21px;
-    margin-top: 15px;
+    margin-top: 11px;
   }
 
   .card__description--small {
     font-size: 14px;
     width: 200px;
-    margin: 15px auto;
+    margin: 10px auto;
   }
 
   .card__title--road {
     font-size: 21px;
     width: 175px;
-    margin-top: 15px;
+    margin-top: 11px;
   }
 
   .card__description--road {
     width: 173px;
-    margin: 15px auto;
+    margin: 10px auto;
   }
 
   .card__title--tourist {
     width: 159px;
     font-size: 21px;
-    margin-top: 15px;
+    margin-top: 11px;
   }
 
   .card__description--tourist {
     width: 190px;
-    margin: 15px auto;
+    margin: 10px auto;
   }
 }
 
 
 @media (min-width: @desktop-width) {
+  .card--icon {
+    margin-top: -18px;
+    margin-bottom: 32px;
+  }
+
   .card::before {
-    top: 86px;
-    left: 254px;
+    top: 87px;
+    left: 255px;
+  }
+
+  .card--gift::before {
+    width: 84px;
+    height: 77px;
+    margin: 0 0 19px 2px;
+  }
+
+  .card--food::before {
+    width: 78px;
+    height: 81px;
+    margin: 0 0 19px;
   }
 
   .card--background1 {
@@ -288,21 +319,17 @@
 
   .card__description--sity {
     width: 280px;
-    margin: 15px auto;
+    margin: 11px auto 0;
   }
 
   .card__title--sity {
     width: 190px;
-    margin: 15px auto 0;
-  }
-
-  .card--gift::before {
-    width: 77px;
-    height: 70px;
+    margin: 1px auto 0;
   }
 
   .card__title--house {
-    margin-top: 156px;
+    padding-top: 170px;
+    margin: 0 auto;
   }
 
   .card__description--house {
@@ -310,7 +337,8 @@
   }
 
   .card__title--food {
-    margin-top: 166px;
+    padding-top: 167px;
+    margin: 0 auto;
   }
 
   .card__description--food {
@@ -318,7 +346,8 @@
   }
 
   .card__title--gift {
-    margin-top: 170px;
+    padding-top: 171px;
+    margin: 0 auto;
   }
 
   .card__description--gift {
@@ -326,33 +355,39 @@
   }
 
   .card__title--bridge {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .card__description--bridge {
     width: 230px;
-    margin: 15px auto;
+    margin: 10px auto;
   }
 
   .card__title--small {
     width: 150px;
-    margin-top: 35px;
+    margin-top: 31px;
   }
 
   .card__description--small {
     width: 310px;
+    margin: 11px auto;
+  }
+
+  .card__title--road {
+    margin-top: 11px;
   }
 
   .card__description--road {
     width: 276px;
-    margin: 15px auto;
+    margin: 10px auto;
   }
 
   .card__title--tourist {
-    margin-top: 30px;
+    margin-top: 29px;
   }
 
   .card__description--tourist {
     width: 260px;
+    margin: 8px auto;
   }
 }
