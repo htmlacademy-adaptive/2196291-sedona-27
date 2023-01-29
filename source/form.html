@@ -244,7 +244,7 @@
     <div class="attractions-wraper">
       <h2 class="attractions__title">Посещенные <br> достопримечательности:</h2>
       <ul class="attractions__list attraction">
-        <li class="attraction__item attraction__bridge checkbox">
+        <li class="attraction__item attraction__bridge ">
           <input class="attraction__input" type="checkbox" id="attraction-1" name="Devil's Bridge" checked="">
           <label class="attraction__control" for="attraction-1"></label>
           <span class="attraction__deskriptor">Мост Дьявола</span>
@@ -263,7 +263,6 @@
           <span class="attraction__deskriptor">Слайд-парк</span>
 
         </li>
-
         <li class="attraction__item attraction__rock checkbox">
           <input class="attraction__input" type="checkbox" id="attraction-4" name="Devil's Bridge">
           <label class="attraction__control" for="attraction-4"></label>
@@ -279,8 +278,8 @@
       <form class="emotion__form" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="emotion__title">Опишите свои эмоции:</h2>
         <label class="visually-hidden" for="emotion-text"></label>
-        <input class="emotion__label" placeholder="Опишите подробно все свои восторги" type="text" name="emotion-text"
-          id="emotion-text" required="">
+        <textarea class="emotion__label" placeholder="Опишите подробно все свои восторги" type="text"
+          name="emotion-text" id="emotion-text" required=""></textarea>
       </form>
       <a class="emotion__button button" href="#">Отправить отзыв</a>
       <span class="emotion-field">* — обязательные поля</span>
