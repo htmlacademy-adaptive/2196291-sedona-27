@@ -101,25 +101,26 @@
   left: 64px;
   right: 0;
   display: flex;
-  width: 129px;
-  height: 46px;
+  width: 190px;
+  // min-height: 46px;
   font-weight: 700;
+  min-height: fit-content;
 }
 
 .attraction__bridge {
-  height: 56px;
+  margin-bottom: -25px;
 }
 
 .attraction__bell {
-  height: 56px;
+  margin-bottom: -25px;
 }
 
 .attraction__park {
-  height: 56px;
+  margin-bottom: -25px;
 }
 
 .attraction__rock {
-  height: 56px;
+  margin-bottom: -45px;
 }
 
 @media (min-width: @tablet-width) {
@@ -127,9 +128,36 @@
     width: 648px;
   }
 
-  .attraction__item {
-    margin: 0 0;
+  // .attraction__bridge,
+  // .attraction__bell,
+  // .attraction__park,
+  // .attraction__rock {
+  //   min-height: 56px;
+  // }
+
+  .attraction__bridge {
+    margin-top: 0;
+    margin-bottom: -45px;
   }
+
+  .attraction__bell {
+    margin-top: 0;
+    margin-bottom: -45px;
+  }
+
+  .attraction__park {
+    margin-top: 0;
+    margin-bottom: -45px;
+  }
+
+  .attraction__rock {
+    margin-top: 0;
+    margin-bottom: -45px;
+  }
+
+  // .attraction__item {
+  //   margin: 0 0;
+  // }
 
   .attractions__list {
     display: grid;
@@ -176,14 +204,16 @@
     left: 64px;
     right: 0;
     display: flex;
-    width: 129px;
-    height: 46px;
+    width: 190px;
+    min-height: 46px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .attractions-wraper {
     width: 960px;
+    min-height: 172px;
+    margin-bottom: 1px;
   }
 
   .attraction__input + .attraction__control {
@@ -195,7 +225,7 @@
   }
 
   .attraction__item {
-    margin: 18px 0 18px;
+    margin: 18px 0 -29px 0;
   }
 
   .attractions__title::after {
@@ -225,22 +255,33 @@
     right: 0;
     display: flex;
     width: 129px;
-    height: 46px;
+    min-height: 46px;
   }
+
+  // .attraction__bridge,
+  // .attraction__bell,
+  // .attraction__park,
+  // .attraction__rock {
+  //   min-height: 56px;
+  // }
 
   .attraction__bridge {
     margin-right: 107px;
+    min-height: 56px;
   }
 
   .attraction__bell {
     margin-right: 105px;
+    min-height: 56px;
   }
 
   .attraction__park {
     margin-right: 88px;
+    min-height: 56px;
   }
 
   .attraction__rock {
     margin-right: 23px;
+    min-height: 56px;
   }
 }
